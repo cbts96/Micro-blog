@@ -6,7 +6,8 @@ const CreatePost = () => {
   const [title, setTitle] = useState("");
   const SubmitForm = async (event) => {
     event.preventDefault();
-    await Axios.post("http://localhost:4000/posts", { title });
+    await Axios.post("http://posts.com/posts/create", { title });
+    setTitle("");
   };
   return (
     <div>

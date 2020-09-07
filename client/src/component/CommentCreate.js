@@ -6,7 +6,7 @@ const CommentCreate = ({postId}) => {
   const [content, setConent] = useState("");
   const handleSubmit = async (event) => {
     event.preventDefault();
-    await Axios.post(`http://localhost:4001/posts/${postId}/comments`, { content });
+    await Axios.post(`http://posts.com/posts/${postId}/comments`, { content });
     setConent("");
   };
   const handleChange = (event) => {
